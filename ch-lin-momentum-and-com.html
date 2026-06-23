@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Observers and Reference Frames</title>
+<title>Linear Momentum and Center of Mass</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-rel-velocity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-rel-velocity.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-rel-position.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="exercises-ch-conserv-energy.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="phy2048.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-momentum-impulse.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -236,10 +236,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-ch-eqs-of-2d-kinematics.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Chapter Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-rel-velocity.html" class="internal"><span class="codenumber">8</span> <span class="title">Relative Velocity</span></a></div>
-<ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-obs-and-ref-frame.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Observers and Reference Frames</span></a></div></li>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-obs-and-ref-frame.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Observers and Reference Frames</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-rel-position.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Relative Position</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-rel-vel.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Relative Velocity</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-solving-rel-vel-probs.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Solving Relative Velocity Problems</span></a></div></li>
@@ -331,9 +331,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-ch-conserv-energy.html" class="internal"><span class="codenumber">16.7</span> <span class="title">Chapter Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-lin-momentum-and-com.html" class="internal"><span class="codenumber">17</span> <span class="title">Linear Momentum and Center of Mass</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-momentum-impulse.html" class="internal"><span class="codenumber">17.1</span> <span class="title">Momentum and Impulse</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-momentum-impulse.html#exercises-sec-impulse" class="internal"><span class="codenumber">17.1</span> <span class="title">Exercises</span></a></div></li></ul>
@@ -399,14 +399,19 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-obs-and-ref-frame"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Observers and Reference Frames</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-lin-momentum-and-com"><h2 class="heading">
+<span class="type">Chapter</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">17</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Momentum and Center of Mass</span>
 </h2>
-<div class="para" id="sec-obs-and-ref-frame-2">In the context of science what is an observer? Does an observer have to be a person or can it be an inanimate object like a camera? In newtonian physics an <dfn class="terminology">observer</dfn> is any real or hypothetical entity or object, that could observe a physical phenomenon if it exist(s/ed). Observers could be anthropomorphized as self centered because they view themselves as the center of the universe. That is to say, every observer has a coordinate system with themselves at the origin by which the positions of everything else in the universe relative to that observer can be taken. Such a coordinate system belonging to an observer is called that observer’s <dfn class="terminology">reference frame</dfn>. Examining a physical phenomenon in an observer’s reference frame is the same a viewing that phenomenon from the observers perspective.<div class="autopermalink" data-description="Paragraph"><a href="#sec-obs-and-ref-frame-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Section 8.1: Observers and Reference Frames"><a href="#sec-obs-and-ref-frame" title="Copy heading and permalink for Section 8.1: Observers and Reference Frames" aria-label="Copy heading and permalink for Section 8.1: Observers and Reference Frames">🔗</a></div></section></div>
+<nav class="summary-links"><ul>
+<li><a href="sec-momentum-impulse.html" class="internal"><span class="codenumber">17.1</span> <span class="title">Momentum and Impulse</span></a></li>
+<li><a href="sec-conserv-momentum.html" class="internal"><span class="codenumber">17.2</span> <span class="title">Conservation of Momentum</span></a></li>
+<li><a href="sec-collisions.html" class="internal"><span class="codenumber">17.3</span> <span class="title">Collisions</span></a></li>
+<li><a href="sec-collision-ex-prob.html" class="internal"><span class="codenumber">17.4</span> <span class="title">Collision Example Problem</span></a></li>
+<li><a href="sec-com.html" class="internal"><span class="codenumber">17.5</span> <span class="title">Center of Mass</span></a></li>
+<li><a href="sec-var-mass-force.html" class="internal"><span class="codenumber">17.6</span> <span class="title">Variable Mass Force</span></a></li>
+</ul></nav><div class="autopermalink" data-description="Chapter 17: Linear Momentum and Center of Mass"><a href="#ch-lin-momentum-and-com" title="Copy heading and permalink for Chapter 17: Linear Momentum and Center of Mass" aria-label="Copy heading and permalink for Chapter 17: Linear Momentum and Center of Mass">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="ch-rel-velocity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-rel-position.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="exercises-ch-conserv-energy.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-momentum-impulse.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

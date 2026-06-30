@@ -109,15 +109,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.7';
+eBookConfig.runestone_version = '8.1.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.2f713d2360adcee7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.53a23d1b65c1dce2.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.4787412a251795e3.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -402,7 +402,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-solv-multi-obj-1d-kin-probs"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Multi-object 1D Kinematic Problems</span>
 </h2>
-<div class="para" id="sec-solv-multi-obj-1d-kin-probs-2">We’ve seen how to do single-object one dimensional kinematics problems. Another common, but slightly more complicated, class of problems is when there are two objects that meet or intersect at a certain time or a certain location. How do we solve for the meeting time or the meeting location? The basic idea behind how to solve multiobject kinematics problems is the same as the single object case, but each object has its own kinematic variables to describe its motion. For two objects we’ll need a seven entry givens tables for each object giving fourteen varialbes in total.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solv-multi-obj-1d-kin-probs-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-solv-multi-obj-1d-kin-probs-2">We’ve seen how to do single-object one dimensional kinematics problems. Another common, but slightly more complicated, class of problems is when there are two objects that meet or intersect at a certain time or a certain location. How do we solve for the meeting time or the meeting location? The basic idea behind how to solve multiobject kinematics problems is the same as the single object case, but each object has its own kinematic variables to describe its motion. For two objects we’ll need a givens table with seven entries for each object (this gives fourteen variables in total).<div class="autopermalink" data-description="Paragraph"><a href="#sec-solv-multi-obj-1d-kin-probs-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-solv-multi-obj-1d-kin-probs-3">Lets go over the recommended steps for solving a multi-object one dimensional kinematics problem by working an example. The evil Lex Luthor drops Lois Lane from the top of a 100.0m high cliff. Who comes to rescue her? Superman, of course! At the time Lois is dropped, Superman jumps from the bottom of the cliff with a super velocity of +50.0 m/s, but he immediately allows gravity to take over during the rest of his jump (so that he doesn’t smash into Lois that fast when he meets her). How long after Lois is dropped does Superman meet up with her?<div class="autopermalink" data-description="Paragraph"><a href="#sec-solv-multi-obj-1d-kin-probs-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -500,15 +500,15 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li id="sec-solv-multi-obj-1d-kin-probs-4-1-3">
 <div class="para logical" id="sec-solv-multi-obj-1d-kin-probs-4-1-3-1">
-<div class="para">For each table, pick one of the equations of kinematics that has the unknown you want and the things you were given. However, the shared unknown in one table might fill in the circled unknown on the other table, so prioritize what to include in the equation:</div>
+<div class="para">For each table, pick one of the equations of kinematics that has the unknown you want and the things you were given. Keep in mind, unknowns that share the same value in both tables are easier to mathimatically eliminate, so prioritize what to include in the equation:</div>
 <ol class="lower-alpha lower-alpha-level-1" id="sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1">
 <li id="sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-1">
-<div class="para" id="sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-1-1">Include the givens and unknown you are solving for.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-1-1">Include the givens and the unknown you are solving for.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 3.a"><a href="#sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-1" title="Copy heading and permalink for Item 3.a" aria-label="Copy heading and permalink for Item 3.a">🔗</a></div>
 </li>
 <li id="sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-2">
-<div class="para" id="sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-2-1">Include shared unknowns that the other table will fill in.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-2-1">Include unknowns that that share the same value in both tables.<div class="autopermalink" data-description="Paragraph"><a href="#sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 3.b"><a href="#sec-solv-multi-obj-1d-kin-probs-4-1-3-1-1-2" title="Copy heading and permalink for Item 3.b" aria-label="Copy heading and permalink for Item 3.b">🔗</a></div>
 </li>
